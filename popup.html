@@ -1,0 +1,42 @@
+
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <h1>HeartBleed</h1>
+	<div style="display: flex; justify-content: center;">
+	<img src='bh.png' height=35% width=35% align=middle>
+	</div>
+	<h2>You'll never have to see Valentine-themed content again.</h2>
+    <div id="container">
+      <p>You can also change the background colour to fit your mood.</p>
+      <select id="dropdown">
+        <option selected disabled hidden value=''></option>
+        <option value="black">my soul</option>
+        <option value=#800020>my heart</option>
+        <option value="grey">my mental state</option>
+        <option value="yellow">eye soothing</option>
+      </select>
+    </div>
+	<br>
+	<div id="quote">
+	Roses are red, violets are blue, <br>
+	Vodka costs less than a dinner for two. </div>
+  </body>
+</html>

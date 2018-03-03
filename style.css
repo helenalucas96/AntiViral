@@ -1,0 +1,41 @@
+h1 {
+	font-family: Calibri;
+	color: #C64BBD;
+	text-shadow: 1px 1px 2px black;
+	font-weight: 100;
+	font-size: 20px;
+	width: 100%;
+    text-align:center;
+
+}
+
+h2 {
+	font-family: Calibri;
+	color: #A1589C;
+	font-size: 15px;
+	width: 100%;
+    text-align:center;
+
+}
+
+p {
+	font-family: Calibri;
+	font-size: 12px;
+	color: #A1589C;
+	width: 100%;
+    text-align:center;
+}
+
+body {
+    background-color: white;
+}
+
+#quote {
+	color: #A1589C;
+	font-family: Corsiva;
+	font-style: italic;
+	font-size: 12px;
+	text-align: center;
+}
+
+
