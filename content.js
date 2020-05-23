@@ -9,12 +9,10 @@ for (var i = 0; i < elements.length; i++) {
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/valentine/g, 'doom').replace(/Valentine/g, 'Doom').replace(/love/gi, 'hate').replace(/present|gift/gi, 'crappy item').replace(/friend|partner/g, 'antagonist').replace(/Friend/g, 'Antagonist').replace(/romantic|lovely|cute/gi, 'disgusting').replace(/card/gi, 'insincere piece of writing').replace(/\brose/gi, 'smelly onion').replace(/flower/gi, 'unwanted shrub').replace(/\bheart/gi, 'empty crust of a previously vibrant heart').replace(/chocolate/gi, 'dirt mousse').replace(/dating/gi, 'unwanted socialising').replace(/candle/gi, 'fire-hazard').replace(/couple/g, 'emotionally codependent twosome').replace(/Couple/g, 'Emotionally codependent twosome').replace(/relationship/gi, 'crippling emotional codependency').replace(/single/gi, 'single (YASS!)').replace(/romance/gi, 'bullshit');
-
+            var replacedText = text.replace(/coronavirus/g, 'Boris Johnson').replace(/Coronavirus/g, 'Boris').replace(/COVID/gi, 'Cummings').replace(/virus|infection/gi, 'Brexit').replace(/lockdown/gi, 'sexytime').replace(/isolation/gi,'alone sexytime').replace(/pandemic/gi, 'game');
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
             }
         }
     }
 }
-
